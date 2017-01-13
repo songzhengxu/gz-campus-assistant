@@ -34,7 +34,7 @@
       </view>
     </view>
   </scroll-view>
-  <view class="input_comment">
+  <view wx:if="{{article_loaded}}" class="input_comment">
     <textarea bindinput="inputComment" placeholder="请写下评论" />
     <view class="send" bindtap="sendComment"></view>
   </view>

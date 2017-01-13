@@ -20,6 +20,9 @@
     margin-right: 16rpx;
  
 }
+.news_item .news_item_img{
+    background: #ccc;
+}
 .news_item1 {
     position: relative;
 }
@@ -29,6 +32,7 @@
     top: 20rpx;
     width: 230rpx;
     height: 150rpx;
+    overflow: hidden;
 }
 .news_item1 .news_item_img image {
     width: 100%;

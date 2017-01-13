@@ -1,5 +1,5 @@
 <view class="container">
-    <scroll-view scroll-y="true" bindscrolltolower="nextPage" bindscrolltoupper="refresh">
+    <scroll-view scroll-y="true" bindscrolltolower="nextPage">
         <navigator wx:for="{{list}}" class="news_item news_item{{item.images.count}}"  wx:key="index" url="posts/posts?id={{item.id}}">
             <text class="news_item_txt">{{item.title}}</text>
             <view wx:if="{{item.featured_media>0}}" class="news_item_img">
