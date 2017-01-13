@@ -86,6 +86,19 @@ Page({
   },
   sendComment: function(){
     //获取用户头像和名字，新建日期，发送给后台，更新comments
+    wx.request({
+      url: NEWS_POSTS_comments,
+      data: {
+        x: '' ,
+        y: ''
+      },
+      header: {
+          'content-type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data)
+      }
+    })
   },
   onReady: function () {
     // 页面渲染完成
