@@ -1,0 +1,41 @@
+
+<!--pages/home/posts/posts.wxml-->
+<import src="../../../wxParse/wxParse.wxml" />
+<view class="container">
+  <scroll-view scroll-y="true" bindscrolltolower="nextPage">
+    <view class="article">
+      <view class="article_title">{{article.title}}</view>
+      <view class="article_date">{{article.date}}</view>
+      <view>
+        <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+      </view>
+    </view>
+    <view class="comments">
+      <view wx:if="{{tips?'true':'false'}}" class="comments_tips">{{tips}}</view>
+      <view class="comments_list">
+        <view wx:for="{{comments}}" wx:key="index" class="comments_item">
+          <view class="comments_pt">
+            <image src="{{item.portrait}}"></image>
+          </view>
+          <view class="comments_wd">
+            <view class="comments_top">
+              <view class="comments_lt">
+                <view class="comments_name">{{item.name}}</view>
+                <view class="comments_date">{{item.date}}</view>
+              </view>
+              <view class="comments_praise">
+                <image src="../../../img/icon-praise.png"></image>
+                <text>{{item.praise}}</text>
+              </view>
+            </view>
+            <view class="comments_text">{{item.text}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="input_comment">
+    <textarea bindinput="inputComment" placeholder="请写下评论" />
+    <view class="send" bindtap="sendComment"></view>
+  </view>
+</view>

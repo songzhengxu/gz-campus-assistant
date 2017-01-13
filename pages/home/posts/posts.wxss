@@ -1,0 +1,109 @@
+/* pages/home/posts/posts.wxss */
+.container {
+  position: relative;
+}
+.article {
+  margin-bottom: 40rpx;
+  padding: 10rpx 26rpx;
+}
+.article_title {
+  margin-bottom: 10rpx;
+  color: #333;
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 50rpx;
+}
+.article_date {
+  font-size: 28rpx;
+  color: #9f9f9f;
+  margin-bottom: 20rpx;
+}
+.wxParse-p{
+  margin-bottom: 10rpx; text-indent: 2em;
+}
+.wxParse-strong{
+  font-weight: boder
+}
+.comments_tips {
+  height: 96rpx;
+  line-height: 96rpx;
+  padding-left: 20rpx;
+  color: #373737;
+  border-top: 1rpx solid #d4d3d7;
+}
+.comments_item {
+  display: flex;
+  padding: 16rpx 26rpx;
+  border-top: 1rpx solid #d4d3d7;
+}
+.comments_pt {
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+  border-radius: 40rpx;
+}
+.comments_pt image {
+  width: 100%;
+  height: 100%;
+  
+}
+.comments_wd {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+.comments_top {
+  overflow: hidden;
+}
+.comments_lt {
+  float: left;
+}
+.comments_praise {
+  float: right;
+  width: 80rpx;
+  height: 40rpx;
+}
+.comments_praise text {
+  position: relative;
+  top: -4rpx;
+  margin-left: 6rpx;
+  color: #666;
+}
+.comments_praise image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.comments_date {
+  font-size: 24rpx;
+  color: #999;
+}
+.comments_text {
+  padding: 10rpx;
+  font-size: 30rpx;
+}
+.input_comment {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  border-top: 1rpx solid #eee;
+}
+.input_comment textarea{
+  width: 100%;
+  height: 100%;
+  padding: 20rpx 110rpx 10rpx 10rpx;
+  box-sizing: border-box;
+}
+.send {
+  position: fixed;
+  right: 20rpx;
+  bottom: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background: url(../../../img/send.png);
+  background-size: 80rpx;
+}
