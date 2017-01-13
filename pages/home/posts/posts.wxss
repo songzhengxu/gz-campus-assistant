@@ -1,6 +1,7 @@
 /* pages/home/posts/posts.wxss */
 .container {
   position: relative;
+  padding-bottom: 100rpx;
 }
 .article {
   margin-bottom: 40rpx;
