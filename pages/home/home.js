@@ -10,9 +10,10 @@ Page({
     isLoading: false,  //是否正在加载数据
     isComplete: false //是否所有列表都加载完
   },
-  //加载数据 time表示定时器的设置时间，初始化为为0，滚动加载为为500
   request: function (time) {
+    console.log("准备请求新闻列表...")
     //加载数据
+  //加载数据 time表示定时器的设置时间，初始化为为0，滚动加载为为500
     api.getList({
       url: url.POSTS + "posts/",
       time: time,
@@ -21,6 +22,7 @@ Page({
         per_page: this.data.per_page
       }
     }, this).then(data => {
+      console.log("请求新闻列表成功....")
       if (!data.list) {
         return;
       }
