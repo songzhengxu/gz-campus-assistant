@@ -1,0 +1,51 @@
+.banner {
+    width: 100%;
+    height: 240rpx;
+}
+.banner image {
+    width: 100%;
+    height: 100%;
+}
+.job_item {
+    width: 100%;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #eee;
+    box-sizing: border-box;
+    background: url(../../../img/icon-rz.png) no-repeat right top;
+    background-size: 96rpx;
+}
+.job_title {
+    width: 100%;
+    padding-right: 80rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.job_info {
+    margin-bottom: 8rpx;
+    font-size: 24rpx;
+    color: #8b8b8b;
+}
+.job_info text {
+    display: inline-block;
+    padding-left: 26rpx;
+    background-size: 24rpx;
+}
+.job_addr {
+    background: url(../../../img/icon-addr.png) no-repeat left center;
+}
+.job_time {
+    margin-left: 16rpx;
+    background: url(../../../img/icon-time.png) no-repeat left center;
+}
+.job_salary_unit {
+    margin-left: 10rpx;
+    font-size: 24rpx;
+}
+.job_salary_num {
+    color: #ff6600;
+    font-size: 36rpx;
+}

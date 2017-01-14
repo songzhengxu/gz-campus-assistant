@@ -4,7 +4,7 @@ let api = require('../../utils/api.js').api
 const url = require('../../utils/url.js');
 Page({
   data: {
-    list: [],
+    list: [], //新闻列表
     page: 1,  //滚动加载时，请求的参数,第一次滚动加载加载page值为为2...
     per_page: 10,//每次加载的条数
     isLoading: false,  //是否正在加载数据

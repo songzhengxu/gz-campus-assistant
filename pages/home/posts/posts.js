@@ -44,7 +44,7 @@ Page({
       title: "加载中...",
       icon: "loading",
       duration: 10000
-    })
+    });
 
     //请求文章数据
     api.getList(url.POSTS + "posts/" +id, {}).then(data => {
