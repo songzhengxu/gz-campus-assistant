@@ -4,7 +4,6 @@ App({
   onLaunch: function () {
     
     //获取用户openid 进行默认登陆
-    console.log("iv");
     wx.login({//login流程
       success: function (res) {//登录成功
         if (res.code) {
@@ -52,7 +51,6 @@ function Login(code, encryptedData, iv) {
     success: function (res) {
       // success
       wx.hideToast();
-      console.log('服务器返回' + res.data);
       if (res.data) {
         wx.showToast({
           title: '登陆成功',
@@ -60,15 +58,6 @@ function Login(code, encryptedData, iv) {
           duration: 2000
         })
       }
-
-
-    },
-    fail: function () {
-      // fail
-      // wx.hideToast();
-    },
-    complete: function () {
-      // complete
     }
   })
 }

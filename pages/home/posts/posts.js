@@ -128,7 +128,6 @@ Page({
   },
   sendComment: function () {
     //获取用户头像和名字，新建日期，发送给后台，更新comments
-<<<<<<< HEAD
     wx.request({
       url: NEWS_POSTS_comments,
       data: {
@@ -142,19 +141,5 @@ Page({
         console.log(res.data)
       }
     })
-  },
-  onReady: function () {
-    // 页面渲染完成
-  },
-  onShow: function () {
-    // 页面显示
-  },
-  onHide: function () {
-    // 页面隐藏
-  },
-  onUnload: function () {
-    // 页面关闭
-=======
->>>>>>> 433568fbb5d82fb1ede62ae50872047cf30d4e0b
   }
 })

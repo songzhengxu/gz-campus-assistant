@@ -3,6 +3,9 @@
     "pages/home/home",
     "pages/home/posts/posts",
     "pages/life/life",
+    "pages/life/job/job",
+    "pages/life/lost/lost",
+    "pages/life/second/second",
     "pages/helper/helper",
     "pages/my/my"
 
