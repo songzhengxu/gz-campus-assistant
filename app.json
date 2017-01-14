@@ -1,8 +1,12 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/life/job/job",
     "pages/home/posts/posts",
     "pages/life/life",
+    "pages/life/job/detail/detail",
+    "pages/life/lost/lost",
+    "pages/life/second/second",
     "pages/helper/helper",
     "pages/my/my"
 

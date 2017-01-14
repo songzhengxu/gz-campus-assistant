@@ -1,2 +1,23 @@
-<!--pages/shenghuo/shenghuo.wxml-->
-<text>pages/shenghuo/shenghuo.wxml</text>
+<view class="container">
+  <navigator class="nav job" url="job/job">
+    <image mode="widthFix" src="../../img/part-time-job.png"></image>
+    <view> 
+      <text class="title">兼职招聘</text>
+      <text class="descriptor">促销/家教/模特/礼仪等</text>
+    </view>
+  </navigator>
+  <navigator class="nav second" url="second/second">
+    <image mode="widthFix" src="../../img/second-hand-deal.png"></image>
+    <view> 
+      <text class="title">二手交易</text>
+      <text class="descriptor">数码/日用/配饰/家电等</text>
+    </view>
+  </navigator>
+  <navigator class="nav lost" url="lost/lost">
+    <image mode="widthFix" src="../../img/lost-and-found.png"></image>
+    <view> 
+      <text class="title">失物招领</text>
+      <text class="descriptor">拾金不昧/寻找失物</text>
+    </view>
+  </navigator>
+</view>

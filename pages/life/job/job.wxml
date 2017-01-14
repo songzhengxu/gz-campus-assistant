@@ -1,0 +1,24 @@
+<view class="container">
+  <scroll-view scroll-y="true" bindscrolltolower="nextPage">
+    <swiper class="banner" indicator-dots="true" autoplay="true" interval="5000">
+      <swiper-item wx:for="{{urls}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+    <view>
+    </view>
+    <view class="job_list">
+      <navigator wx:for="{{list}}" wx:key="{{index}}" class="job_item" url="detail/detail?id={{item.id}}">
+        <view class="job_title">{{item.title}}</view>
+        <view class="job_info">
+          <text class="job_addr">{{item.addr}}</text>
+          <text class="job_time">{{item.time}}</text>
+        </view>
+        <view>
+          <text class="job_salary_num">{{item.salary.num}}</text>
+          <text class="job_salary_unit">{{item.salary.unit}}</text>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>
