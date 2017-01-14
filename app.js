@@ -38,6 +38,9 @@ App({
     })
   },
   onLaunch: function () {
+    this.getUserInfo();
+  },
+  getUserInfo: function(){
     var that=this;
     if (!this.globalData.userInfo) {
       wx.login({//login流程

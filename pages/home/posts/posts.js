@@ -106,11 +106,12 @@ Page({
   },
   sendComment: function() {
 		var _this = this;
+    console.log( _this.data.comment_text)
 		//
 		wx.request({
 			url: url.POSTS + "comments",
 			data: {
-				comment: _this.data.comment_text,
+				content: _this.data.comment_text,
 				post: _this.data.article.id,
 			},
 			method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
@@ -124,7 +125,7 @@ Page({
 					wx.showToast({
 						title: res.data.message,
 						icon: 'loading',
-						duration: 1000
+						duration: 2000
 					})
 				} else {
 					wx.showToast({
@@ -132,6 +133,9 @@ Page({
 						icon: 'success',
 						duration: 2000
 					})
+          _this.setData({
+            comment_text: ""
+          })
 				}
 			}
 		})

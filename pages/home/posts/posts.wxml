@@ -28,14 +28,14 @@
                 <text>{{item.praise}}</text>
               </view>
             </view>
-            <view class="comments_text">{{item.text}}</view>
+            <view class="comments_text">{{item.content}}</view>
           </view>
         </view>
       </view>
     </view>
   </scroll-view>
   <view wx:if="{{article_loaded}}" class="input_comment">
-    <textarea bindinput="inputComment" placeholder="请写下评论" />
+    <textarea bindinput="inputComment" value="{{comment_text}}" placeholder="请写下评论" />
     <view class="send" bindtap="sendComment">发送</view>
   </view>
 </view>
