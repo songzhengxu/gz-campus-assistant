@@ -1,1 +1,5 @@
-<navigator url="url"></navigator>
+<view class="container">
+  <navigator url="job/job">兼职招聘</navigator>
+  <navigator url="second/second">二手交易</navigator>
+  <navigator url="lost/lost">失物招领</navigator>
+</view>

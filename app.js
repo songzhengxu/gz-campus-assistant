@@ -2,8 +2,10 @@
 var API_URL = "https://wx.fanweimei.com/wp-content/plugins/PHP_wx_login/login.php";
 App({
   onLaunch: function () {
-    
     //获取用户openid 进行默认登陆
+    //this.getUserInfo();
+  },
+  getUserInfo: function () {
     wx.login({//login流程
       success: function (res) {//登录成功
         if (res.code) {
