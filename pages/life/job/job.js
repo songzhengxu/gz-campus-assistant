@@ -14,60 +14,58 @@ Page({
         per_page: 2
     },
     //初始化加载数据
-    initLoadData: function (data,api) {
-        let _this = this;
-        if (data.list && data.list.length > 0) {
-            _this.setData({
-                list: data.list
-            });
-        } else {
-            _this.setData({
-                isComplete: true
-            });
-        }
-        //加载banner图地址
-        api.request({
-            url: banner_url,
-            isShowToast: false,
-            fn: function (data2) {
-                console.log("come in")
-                if (data2.banner_urls && data2.banner_urls.length > 0) {
-                    _this.setData({
-                        urls: data2.banner_urls
-                    });
-                }
-            }
-        }, this);
+    initLoadData: function (data, api) {
+
     },
     onLoad: function () {
         //加载数据
-        api.request({
-            url: list_url,
-            fn: this.initLoadData
-        }, this)
+        api.getList({
+            url: list_url
+        }, this).then((data) => {
+            if (data.list && data.list.length > 0) {
+                this.setData({
+                    list: data.list
+                });
+            } else {
+                this.setData({
+                    isComplete: true
+                });
+            }
+            //加载banner图地址
+            api.getList({
+                url: banner_url,
+                isShowTost: false
+            },this).then(data2 => {
+                if (data2.banner_urls && data2.banner_urls.length > 0) {
+                    this.setData({
+                        urls: data2.banner_urls
+                    });
+                }
+
+            })
+        })
     },
     nextPage: function () {
-        let _this = this;
-        let page = ++_this.data.page;
+        let page = ++this.data.page;
         api.request({
             url: list_scroll_url,
             time: 500,
             param: {
                 page: page,
-                per_page: _this.data.per_page
-            },
-            fn: function (data,api) {
-                if (data.list && data.list.length > 0) {
-                    _this.setData({
-                        list: _this.data.list.concat(data.list)
-                    });
-                } else {
-                    _this.setData({
-                        isComplete: true
-                    });
-                    return;
-                }
+                per_page: this.data.per_page
             }
-        }, this);
+        }, this).then(data => {
+            if (data.list && data.list.length > 0) {
+                this.setData({
+                    list: _this.data.list.concat(data.list)
+                });
+            } else {
+                this.setData({
+                    isComplete: true,
+                    isLoading: false
+                });
+                return;
+            }
+        })
     }
 })
