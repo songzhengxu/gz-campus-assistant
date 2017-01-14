@@ -11,7 +11,7 @@
     padding: 20rpx;
     border-bottom: 1rpx solid #eee;
     box-sizing: border-box;
-    background: url(../../../img/icon-rz.png) no-repeat right top;
+    background: url(https://wx.fanweimei.com/json/img/icon-rz.png) no-repeat right top;
     background-size: 96rpx;
 }
 .job_title {
@@ -35,11 +35,11 @@
     background-size: 24rpx;
 }
 .job_addr {
-    background: url(../../../img/icon-addr.png) no-repeat left center;
+    background: url(https://wx.fanweimei.com/json/img/icon-addr.png) no-repeat left center;
 }
 .job_time {
     margin-left: 16rpx;
-    background: url(../../../img/icon-time.png) no-repeat left center;
+    background: url(https://wx.fanweimei.com/json/img/icon-time.png) no-repeat left center;
 }
 .job_salary_unit {
     margin-left: 10rpx;
