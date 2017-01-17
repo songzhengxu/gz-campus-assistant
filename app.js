@@ -26,8 +26,9 @@ App({
         wx.hideToast();
         this.globalData.userInfo = res;
         var openId=res.data.openId;
+      
         this.globalData.userInfo.Basic = utils.base64_encode( openId+ ':' + '123456');
-        if (res) {
+        if (this.globalData.userInfo.Basic) {
           wx.showToast({
             title: '登陆成功',
             icon: 'success',
@@ -38,7 +39,7 @@ App({
     })
   },
   onLaunch: function () {
-    this.getUserInfo();
+    //this.getUserInfo();
   },
   getUserInfo: function(){
     var that=this;
@@ -64,7 +65,7 @@ App({
     }
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
   }
 
 })

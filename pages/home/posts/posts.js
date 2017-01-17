@@ -107,6 +107,14 @@ Page({
   sendComment: function() {
 		var _this = this;
     console.log( _this.data.comment_text)
+    if(!app.globalData.userInfo){
+        	wx.showToast({
+						title: "请登陆后再评论",
+						icon: 'success',
+						duration: 2000
+					})
+        return false; 
+    }
 		//
 		wx.request({
 			url: url.POSTS + "comments",

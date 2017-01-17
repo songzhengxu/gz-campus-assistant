@@ -1,12 +1,13 @@
 {
   "pages":[
+        "pages/life/second/second",
     "pages/home/home",
     "pages/life/job/job",
     "pages/home/posts/posts",
     "pages/life/life",
     "pages/life/job/detail/detail",
+
     "pages/life/lost/lost",
-    "pages/life/second/second",
     "pages/helper/helper",
     "pages/my/my"
 
@@ -30,7 +31,7 @@
       "iconPath":"img/life.png",
       "selectedIconPath":"img/life2.png"
     }, {
-      "pagePath": "pages/helper/helper",
+      "pagePath": "pages/life/second/second",
       "text": "助手",
       "iconPath":"img/helper.png",
       "selectedIconPath":"img/helper2.png"
