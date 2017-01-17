@@ -1,0 +1,78 @@
+/* pages/life/job/edit/edit.wxss */
+.container {
+    position: relative;
+    padding-top: 80rpx;
+    background: #f7f7fa;
+}
+.info_msg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60rpx;
+    background: #e64340;
+    color: #fff;
+    text-align: center;
+    line-height: 60rpx;
+}
+.section {
+    display:-webkit-box;
+    padding-left: 6rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #eee;
+}
+.section_gap {
+    margin-bottom: 30rpx;
+}
+.section text{
+    display: block;
+    width: 150rpx;
+    text-align: right;
+    line-height: 80rpx;
+    color: #333;
+}
+.label {
+    padding-left: 10rpx;
+}
+.section input,.section textarea{
+    -webkit-box-flex: 1;
+    padding-right: 10rpx;
+    box-sizing: border-box;
+}
+.section input {
+    height: 80rpx;
+}
+.picker {
+    -webkit-box-flex: 1;
+    line-height: 80rpx;
+}
+.picker picker,.connector {
+    float: left;
+}
+.connector {
+    margin: 0 30rpx;
+}
+
+.section_gap view:last-child {
+    border: none;
+}
+.picker_area {
+    background: url(https://wx.fanweimei.com/json/img/arrow-right-black.png) no-repeat 95% center;
+    background-size: 40rpx;
+}
+.txt_input {
+    height: 240rpx;
+    overflow: hidden;
+}
+
+.txt_input textarea {
+    padding-right: 10rpx;
+    padding-top: 24rpx;
+    box-sizing: border-box;
+}
+.form_btn {
+    margin-top: 40rpx;
+    padding: 0 20rpx;
+}
+
+
