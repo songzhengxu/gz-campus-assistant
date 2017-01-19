@@ -47,7 +47,7 @@ class Api {
                     },
                     fail: err => reject(err)
                 })
-            }, options.time)
+            }, 0)
         })
 
     }

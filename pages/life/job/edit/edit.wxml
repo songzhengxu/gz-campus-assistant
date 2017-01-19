@@ -1,95 +1,129 @@
 
 <!--pages/life/job/edit/edit.wxml-->
 <view class="container">
-  <view wx:if="{{msg!=''}}" class="info_msg">{{msg}}</view>
-  <scroll-view scroll-y="true">
-    <form bindsubmit="formSubmit">
-      <view class="section_gap">
-        <view class="label">兼职信息</view>
-        <view class="section">
-          <text>标题：</text>
+  <view wx:if="{{msg!=''}}" class="err_msg">{{msg}}</view>
+  <form bindsubmit="formSubmit">
+
+    <!--<view class="page page_prev" animation="{{hide_page}}">-->
+    <view class=" section_group">
+      <view class="section_instr">兼职信息</view>
+      <view class="section bd">
+        <label>标题</label>
+        <view class="section_content section_input">
           <input type="text" id="title" value="{{title}}" bindinput="valueChange" placeholder="XXX公司招聘招聘5促销员" />
         </view>
-        <view class="section">
-          <text>工作岗位：</text>
+      </view>
+      <view class="section bd">
+        <label>工作岗位</label>
+        <view class="section_content section_input">
           <input type="text" id="station" value="{{station}}" bindinput="valueChange" placeholder="促销员" />
         </view>
-        <view class="section">
-          <text>工作薪酬：</text>
+      </view>
+      <view class="section bd">
+        <label>工作薪酬</label>
+        <view class="section_content section_input">
           <input type="text" id="salary" value="{{salary}}" bindinput="valueChange" placeholder="16元/小时" />
         </view>
-        <view class="section">
-          <text>结算方式：</text>
+      </view>
+      <view class="section bd">
+        <label>结算方式</label>
+        <view class="section_content section_input">
           <input type="text" id="accounts" value="{{accounts}}" bindinput="valueChange" placeholder="周结" />
         </view>
-        <view class="section">
-          <text>人数需求：</text>
+      </view>
+      <view class="section bd">
+        <label>人数需求</label>
+        <view class="section_content section_input">
           <input type="text" id="count" value="{{count}}" bindinput="valueChange" placeholder="10人" />
         </view>
-        <view class="section">
-          <text>工作地区：</text>
+      </view>
+      <view class="section bd">
+        <label>工作地区</label>
+        <view class="section_content section_area">
           <picker class="picker picker_area" id="index" value="{{index}}" range="{{areas}}" bindchange="valueChange">
             <view>
               {{areas[index]}}
             </view>
           </picker>
         </view>
-        <view class="section">
-          <text>详细地址：</text>
+      </view>
+      <view class="section bd">
+        <label>详细地址</label>
+        <view class="section_content section_input">
           <input type="text" id="detail" value="{{detail}}" bindinput="valueChange" placeholder="广州市番禺区大学城XX街XX号楼" />
         </view>
-        <view class="section">
-          <text>工作日期：</text>
-          <view class="picker">
-            <picker mode="date"id="start_date" value="{{start_date}}" start="2017-01-01" end="2050-01-01" bindchange="valueChange">
-              <view class="picker">
-                {{start_date}}
-              </view>
-            </picker>
-            <view class="connector">至</view>
-            <picker mode="date" id="end_date" value="{{end_date}}" start="2017-01-01" end="2050-01-01" bindchange="valueChange">
-              <view class="picker">
-                {{end_date}}
-              </view>
-            </picker>
-          </view>
+      </view>
+      <view class="section">
+        <label>工作日期</label>
+        <view class="section_content section_date">
+          <picker class="date" mode="date" id="start_date" value="{{start_date}}" start="2017-01-01" end="2050-01-01" bindchange="valueChange">
+            <view>
+              {{start_date}}
+            </view>
+          </picker>
+          <view class="date_connector">至</view>
+          <picker class="date" mode="date" id="end_date" value="{{end_date}}" start="2017-01-01" end="2050-01-01" bindchange="valueChange">
+            <view>
+              {{end_date}}
+            </view>
+          </picker>
         </view>
       </view>
-      <view class="section_gap">
-        <view class="label">联系方式</view>
-        <view class="section">
-          <text>姓名：</text>
-          <input type="text" id="name" value="{{name}}" bindinput="valueChange" placeholder="陈经理 " />
+    </view>
+    <view class="section_group">
+      <view class="section_instr">联系方式</view>
+      <view class="section bd">
+        <label>姓名</label>
+        <view class="section_content section_input">
+          <input type="text" id="name" value="{{name}}" bindinput="valueChange" placeholder="陈经理" />
         </view>
-        <view class="section">
-          <text>联系电话：</text>
+      </view>
+      <view class="section">
+        <label>联系电话</label>
+        <view class="section_content section_input">
           <input type="number" id="phone" value="{{phone}}" bindinput="valueChange" placeholder="1322621XXXX" />
         </view>
       </view>
-      <view class="section_gap">
-        <view class="label">工作内容</view>
-        <view class="section">
-          <text>岗位要求：</text>
-          <view class="txt_input">
-            <textarea id="requirements" value="{{requirements}}" bindinput="valueChange" placeholder="要求性格外向开朗，有服务意识，能吃苦耐劳。"/>
-          </view>
-        </view>
-        <view class="section">
-          <text>岗位职责：</text>
-          <view class="txt_input">
-            <textarea id="responsibility" value="{{responsibility}}" bindinput="valueChange" placeholder="身份不限、身高不限、18-36岁" />
-          </view>
-        </view>
-        <view class="section">
-          <text>备注：</text>
-          <view class="txt_input">
-            <textarea id="others" value="{{others}}" bindinput="valueChange" placeholder="（可选）" placeholder-class="placeholder" />
-          </view>
-        </view>
-        <view class="form_btn">
-          <button type="{{disabled?'default':'primary'}}" form-type="submit" disabled="{{others}}">提交</button>
+    </view>
+
+    <!--<view class="section_btn next_btn">
+        <button bindtap="nextPage">下一页</button>
+      </view>-->
+
+    <!--</view>-->
+
+    <!--<view class="page page_next" animation="{{show_page}}">-->
+    <view class="section_group">
+      <view class="section_instr">工作内容</view>
+      <view class="section bd">
+        <label>岗位要求</label>
+        <view class="section_content section_text">
+          <input  id="requirements" value="{{requirements}}" bindinput="valueChange" placeholder="要求性格外向开朗，有服务意识，能吃苦耐劳。" />
         </view>
       </view>
-    </form>
-  </scroll-view>
+      <view class="section bd">
+        <label>岗位职责</label>
+        <view class="section_content section_text">
+          <input id="responsibility" value="{{responsibility}}" bindinput="valueChange" placeholder="身份不限、身高不限、18-36岁" />
+        </view>
+      </view>
+      <view class="section">
+        <label>备注</label>
+        <view class="section_content section_text">
+          <input id="others" value="{{others}}" bindinput="valueChange" placeholder="(可选)" placeholder-class="placeholder" />
+        </view>
+      </view>
+    </view>
+    <view class="section_agreement">
+      <label>
+        <checkbox value="{{isAgree}}" /> 已阅读并同意
+        <navigator url="../../agreement/agreement">《借款额度合同及相关授权》</navigator>
+      </label>
+    </view>
+    <view class="section_btn">
+      <button type="{{disabled? 'default': 'primary'}}" form-type="submit">提交</button>
+    </view>
+
+    <!--</view>-->
+  </form>
 </view>
