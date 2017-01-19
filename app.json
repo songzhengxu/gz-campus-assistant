@@ -1,18 +1,16 @@
 {
   "pages":[
-    "pages/home/home",
     "pages/life/job/edit/edit",
+    "pages/home/home",
     "pages/life/job/detail/detail",
     "pages/life/second/second",
     "pages/life/job/job",
     "pages/home/posts/posts",
     "pages/life/life",
     "pages/life/success/success",
-
     "pages/life/lost/lost",
     "pages/helper/helper",
     "pages/my/my"
-
   ],
   "window":{
     "backgroundTextStyle":"light",
