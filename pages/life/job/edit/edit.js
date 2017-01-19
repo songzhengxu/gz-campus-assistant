@@ -17,7 +17,8 @@ Page({
     responsibility: "", //岗位职责
     others: "",   //备注,
     disabled: true,  //是否可以发生提交请求，除备注外，其它均不能为空
-    msg: ""   //错误提示信息
+    msg: "",   //错误提示信息
+    isAgree: false //是否同意协议
   },
   isRequiredNotNull: function () {  //判断必填字段不为空
     if (this.data.title.trim() == "") {

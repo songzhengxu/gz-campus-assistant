@@ -8,6 +8,7 @@
     "pages/home/posts/posts",
     "pages/life/life",
     "pages/life/success/success",
+    "pages/life/agreement/agreement",
     "pages/life/lost/lost",
     "pages/helper/helper",
     "pages/my/my"
@@ -17,7 +18,7 @@
     "navigationBarBackgroundColor": "#3399ff",
     "navigationBarTitleText": "广州校园助手",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false 
   },
    "tabBar": {
     "list": [{
@@ -46,5 +47,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug":false
+  "debug":true
 }
