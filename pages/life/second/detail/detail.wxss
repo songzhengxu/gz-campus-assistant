@@ -1,0 +1,75 @@
+.g-shop{
+    background: #efefef;
+}
+.shop_detail{
+    padding: 24rpx;
+    background: #fff;
+    margin-bottom:24rpx; 
+}
+.m-xztx{
+    height: 80rpx;
+    margin-bottom: 24rpx;
+}
+.m-xztx image{
+    width: 80rpx;
+    height: 80rpx;
+    float: left;
+    border-radius: 40rpx;
+    overflow: hidden;
+    margin-right: 24rpx;
+    background-color: #efefef;
+}
+.m-xztx .tit{
+    font-size: 30rpx;
+    color: #333;
+    line-height: 46rpx;
+}
+.m-xztx .tit .price{
+    color: #ff0000;
+    float: right;
+}
+.m-xztx .num{
+    font-size: 26rpx;
+    color: #999;
+    line-height: 32rpx;
+}
+.m-xztx .tit .price{
+    font-size: 20rpx;
+    color: #999;
+    float: right;
+    text-decoration:line-through;
+}
+.m-xztx .new_price{
+     font-size: 30rpx;
+    color: #ff0000;
+    float: right;
+}
+.shop_text{
+    margin-bottom: 24rpx;
+}
+.shop_img image{
+    width: 100%;
+    min-height:300rpx;
+    background: #efefef;
+    margin-bottom: 5rpx;
+}
+.shop_info .icon{
+    color: #53addf;
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    border: 1px solid #53addf;
+    padding: 1px;
+}
+.shop_info .num{
+    float: right;
+    font-size: 26rpx;
+    color: #999;
+}
+.comments{
+    background: #fff;
+}
+.comments_tips{
+    padding: 24rpx;
+    font-size: 24rpx;
+    border-bottom: 1px solid #efefef;
+}

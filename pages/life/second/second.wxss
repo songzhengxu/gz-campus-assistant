@@ -1,0 +1,44 @@
+
+.shop_list{
+    background: #efefef;
+}
+.shop_item{
+    padding: 24rpx;
+    margin-bottom: 24rpx;
+    background: #fff;
+}
+.m-xztx{
+    height: 80rpx;
+    margin-bottom: 24rpx;
+}
+.m-xztx image{
+    width: 80rpx;
+    height: 80rpx;
+    float: left;
+    margin-right: 24rpx;
+    background-color: #efefef;
+}
+.m-xztx .tit{
+    font-size: 30rpx;
+    color: #333;
+    line-height: 46rpx;
+}
+.m-xztx .tit .price{
+    color: #ff0000;
+    float: right;
+}
+.m-xztx .num{
+    font-size: 26rpx;
+    color: #999;
+    line-height: 32rpx;
+}
+.shop_img{
+ display: flex;
+}
+.shop_img image{
+    background-color: #efefef;
+    width: 230rpx;
+    height: 230rpx;
+    margin: 3px;
+}
+

@@ -2,7 +2,7 @@
 @import "/wxParse/wxParse.wxss";
 page {
   height: 100%;
-  font: normal 30rpx/1.68 -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+  font: normal 30rpx/1.68 'Microsoft YaHei',-apple-system-font, 'Helvetica Neue', Helvetica,  sans-serif;
 }
 .container {
   height: 100%;
@@ -23,4 +23,7 @@ scroll-view {
 }
 .bd {
     border-bottom: 2rpx solid #e5e5e5;
+}
+.mrr25{
+    margin-right: 25rpx;
 }

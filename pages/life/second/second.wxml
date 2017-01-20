@@ -6,14 +6,16 @@
       </swiper-item>
     </swiper>
     <view class="shop_list">
-      <navigator wx:for="{{list}}" class="news_item news_item{{item.images.count}}"  wx:key="index" url="posts/posts?id={{item.id}}">
-            <text class="news_item_txt">{{item.title}}</text>
-            <view wx:if="{{item.featured_media>0}}" class="news_item_img">
-                <image wx:for="{{item.images.url}}" wx:for-item="imgItem" wx:key="index" src="{{imgItem}}"></image>
+      <navigator wx:for="{{list}}" class="shop_item"  wx:key="index" url="detail/detail?id={{item.id}}">
+           <view class="m-xztx">
+              <image src="{{src}}"></image>
+                <view class="tit">宋有才  <text class="price">321元</text> </view>
+                <view class="num"><text class="mrr25">人气：119</text><text>评论：299 </text></view>              
             </view>
-            <view class="news_item_label">
-                <text  wx:if="{{item.comments_number>0}}" >{{item.comments_number}}评</text>
-                <text>{{item.date}}</text>
+            <view class="shop_img">
+                <image src="{{src}}"></image>
+                <image src="{{src}}"></image>
+                <image src="{{src}}"></image>
             </view>
         </navigator>
     </view>
