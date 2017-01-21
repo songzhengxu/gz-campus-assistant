@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/life/second/detail/detail",     
+    "pages/home/home",
+    "pages/home/posts/posts",
+    "pages/life/life",
+    "pages/life/success/success",
+    "pages/life/agreement/agreement",
+    "pages/life/job/job",
+    "pages/life/job/detail/detail",
+    "pages/life/job/edit/edit",
+    "pages/life/second/second",
+    "pages/life/second/detail/detail",   
+    "pages/life/lost/lost",
+    "pages/helper/helper",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "广州校园助手",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": false 
+  },
+   "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "新闻",
+      "iconPath":"img/home.png",
+      "selectedIconPath":"img/home2.png"
+    }, {
+      "pagePath": "pages/life/life",
+      "text": "生活",
+      "iconPath":"img/life.png",
+      "selectedIconPath":"img/life2.png"
+    }, {
+      "pagePath": "pages/life/second/second",
+      "text": "助手",
+      "iconPath":"img/helper.png",
+      "selectedIconPath":"img/helper2.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我",
+      "iconPath":"img/my.png",
+      "selectedIconPath":"img/my2.png"
+    }]
+  },
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":false
+}
