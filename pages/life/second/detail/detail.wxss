@@ -67,9 +67,35 @@
 }
 .comments{
     background: #fff;
+    margin-bottom: 110rpx;
 }
-.comments_tips{
-    padding: 24rpx;
+.shop_caozuo{
+    height: 90rpx;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #efefef;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.shop_goumai{
+    float: right;
+    background: #3399ff;
+    width: 245rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    color: #fff;
+     text-align: center;
+}
+.shop_caozuo .icon{
+    width: 90px; float: left;
+    text-align: center;
+    padding-top: 2px;
     font-size: 24rpx;
-    border-bottom: 1px solid #efefef;
+}
+.shop_caozuo .icon image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin:0 auto; 
 }

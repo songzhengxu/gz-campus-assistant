@@ -28,24 +28,54 @@
   <view class="comments">
     <view wx:if="{{tips?'true':'false'}}" class="comments_tips">留言(10){{tips}}</view>
     <view class="comments_list">
-      <view wx:for="{{comments}}" wx:key="index" class="comments_item">
+      <view wx:key="index" class="comments_item">
         <view class="comments_pt">
           <image src="{{item.portrait}}"></image>
         </view>
         <view class="comments_wd">
           <view class="comments_top">
             <view class="comments_lt">
-              <view class="comments_name">{{item.name}}</view>
-              <view class="comments_date">{{item.date}}</view>
+              <view class="comments_name">宋有才{{item.name}}</view>
             </view>
             <view class="comments_praise">
-              <image src="../../../img/icon-praise.png"></image>
-              <text>{{item.praise}}</text>
+              <text>两小时前{{item.date}}</text>
             </view>
           </view>
-          <view class="comments_text">{{item.content}}</view>
+          <view class="comments_text">那你自己考虑清楚了{{item.content}}</view>
+        </view>
+      </view>
+      <view wx:key="index" class="comments_item">
+        <view class="comments_pt">
+          <image src="{{item.portrait}}"></image>
+        </view>
+        <view class="comments_wd">
+          <view class="comments_top">
+            <view class="comments_lt">
+              <view class="comments_name">宋正旭{{item.name}} <text class="zhuren">主人</text></view>
+            </view>
+            <view class="comments_praise">
+              <text>两小时前{{item.date}}</text>
+            </view>
+          </view>
+          <view class="comments_text">回复@宋有才:嗯，想好了告诉你{{item.content}}</view>
         </view>
       </view>
     </view>
   </view>
+</view>
+<!-- 下边的操作栏 -->
+<view class="shop_caozuo">
+  <view class="icon">
+    <image src="../../../../img/liuyan.png"></image>
+    <text>留言</text>
+  </view>
+  <view class="icon">
+    <image src="../../../../img/dianzan.png"></image>
+    <text>点赞</text>
+  </view>
+  <view class="icon">
+    <image src="../../../../img/siliao.png"></image>
+    <text>私聊</text>
+  </view>
+  <view class="shop_goumai">我想要</view>
 </view>
