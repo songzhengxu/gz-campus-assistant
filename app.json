@@ -1,16 +1,16 @@
 {
   "pages":[
-  
-    "pages/life/second/second",
-      "pages/life/second/detail/detail",
-    "pages/life/job/edit/edit",
+    "pages/life/job/detail/detail",    
     "pages/home/home",
-    "pages/life/job/detail/detail",
-    "pages/life/job/job",
     "pages/home/posts/posts",
     "pages/life/life",
     "pages/life/success/success",
     "pages/life/agreement/agreement",
+    "pages/life/job/job",
+    "pages/life/job/detail/detail",
+    "pages/life/job/edit/edit",
+    "pages/life/second/second",
+    "pages/life/second/detail/detail",   
     "pages/life/lost/lost",
     "pages/helper/helper",
     "pages/my/my"
@@ -49,5 +49,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug":true
+  "debug":false
 }

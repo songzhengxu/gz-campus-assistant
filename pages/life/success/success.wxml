@@ -1,2 +1,12 @@
-<!--pages/life/success/success.wxml-->
-<text>pages/life/success/success.wxml</text>
+<view class="container">
+    <view class="icon_wrapper">
+        <icon type="success" size="70" />
+    </view>
+    <view class="tip_info">
+        <text class="tip_tt">操作成功</text>
+        <text class="tip_detail">恭喜您，发布成功！管理员将会在24小时内审核，审核通过后才能正常显示</text>
+    </view>
+    <view class="btn_wrapper">
+        <button type="primary" bindtap="pageJump">返回列表页</button>
+    </view>
+</view>

@@ -1,19 +1,16 @@
 // pages/life/success/success.js
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data:{
+    url: ""
   },
-  onReady:function(){
-    // 页面渲染完成
+  onLoad: function(option){
+    this.setData({
+      url: "../"+option.page+"/"+option.page
+    })
   },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
+  pageJump: function(){
+    wx.redirectTo({
+      url: this.data.url
+    })
   }
 })

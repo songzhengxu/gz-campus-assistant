@@ -15,18 +15,17 @@
     text-align: center;
     line-height: 70rpx;
 }
-.page {
-    position: absolute;
-    top: 0;
+.page_prev {
     width: 100%;
     height: 100%;
 }
-.page_prev {
-    left: 0;
-}
 .page_next {
-    display: none;
-    left: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
     background: #efeff4;
 }
 
@@ -93,10 +92,9 @@
     height: 200rpx;
     padding: 20rpx 0;
 }
-.section_text input {
-    height: 100%;
+.section_text textarea {
     width: 100%;
-    border: 1px solid #efefef;
+    height: 100%;
 }
 .section_agreement {
     height: 114rpx;

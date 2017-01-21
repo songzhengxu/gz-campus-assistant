@@ -4,7 +4,7 @@
   <view wx:if="{{msg!=''}}" class="err_msg">{{msg}}</view>
   <form bindsubmit="formSubmit">
 
-    <!--<view class="page page_prev" animation="{{hide_page}}">-->
+    <view class="page_prev" animation="{{hide_page}}">
     <view class=" section_group">
       <view class="section_instr">兼职信息</view>
       <view class="section bd">
@@ -86,44 +86,44 @@
       </view>
     </view>
 
-    <!--<view class="section_btn next_btn">
-        <button bindtap="nextPage">下一页</button>
-      </view>-->
+    <view class="section_btn next_btn">
+        <button type="{{isAllowNext? 'primary': 'default'}}" bindtap="nextPage">下一页</button>
+      </view>
 
-    <!--</view>-->
+    </view>
 
-    <!--<view class="page page_next" animation="{{show_page}}">-->
+    <view class="page_next" animation="{{show_page}}">
     <view class="section_group">
       <view class="section_instr">工作内容</view>
       <view class="section bd">
         <label>岗位要求</label>
         <view class="section_content section_text">
-          <input  id="requirements" value="{{requirements}}" bindinput="valueChange" placeholder="要求性格外向开朗，有服务意识，能吃苦耐劳。" />
+          <textarea  id="requirements" value="{{requirements}}" bindinput="valueChange" placeholder="要求性格外向开朗，有服务意识，能吃苦耐劳。" />
         </view>
       </view>
       <view class="section bd">
         <label>岗位职责</label>
         <view class="section_content section_text">
-          <input id="responsibility" value="{{responsibility}}" bindinput="valueChange" placeholder="身份不限、身高不限、18-36岁" />
+          <textarea id="responsibility" value="{{responsibility}}" bindinput="valueChange" placeholder="身份不限、身高不限、18-36岁" />
         </view>
       </view>
       <view class="section">
         <label>备注</label>
         <view class="section_content section_text">
-          <input id="others" value="{{others}}" bindinput="valueChange" placeholder="(可选)" placeholder-class="placeholder" />
+          <textarea id="others" value="{{others}}" bindinput="valueChange" placeholder="(可选)" placeholder-class="placeholder" />
         </view>
       </view>
     </view>
-    <view class="section_agreement">
+    <checkbox-group id="isAgree" class="section_agreement" bindchange="valueChange">
       <label>
-        <checkbox value="{{isAgree}}" /> 已阅读并同意
-        <navigator url="../../agreement/agreement">《借款额度合同及相关授权》</navigator>
+        <checkbox value="isAgree" /> 已阅读并同意
+        <navigator url="../../agreement/agreement">《广州校园助手发帖人相关授权》</navigator>
       </label>
-    </view>
+    </checkbox-group>
     <view class="section_btn">
-      <button type="{{disabled? 'default': 'primary'}}" form-type="submit">提交</button>
+      <button type="{{isSubmit? 'primary': 'default'}}" form-type="submit">提交</button>
     </view>
 
-    <!--</view>-->
+    </view>
   </form>
 </view>
