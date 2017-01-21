@@ -9,8 +9,7 @@
       </view>
       <view class="num">
         <text class="new_price">￥550</text>
-        <text class="mrr25">人气：119</text>
-        <text>评论：299 </text>
+        <text class="mrr25">2017/01/21</text>
       </view>
     </view>
     <view class="shop_text">
@@ -19,11 +18,12 @@
     <view class="shop_img">
       <image src="{{src}}"></image>
     </view>
-    <view class="shop_info">
+    <view class="shop_info bd">
       <text class="icon">担保交易</text>
       <text class="icon">已实名</text>
-      <text class="num"> 点赞 0 · 评论 199</text>
+      <text class="num"> 收藏 0 · 评论 199</text>
     </view>
+    <view class="shop_addr">地址：大学城华南理工大学</view>
   </view>
   <view class="comments">
     <view wx:if="{{tips?'true':'false'}}" class="comments_tips">留言(10){{tips}}</view>
@@ -70,8 +70,8 @@
     <text>留言</text>
   </view>
   <view class="icon">
-    <image src="../../../../img/dianzan.png"></image>
-    <text>点赞</text>
+    <image src="../../../../img/collect.png"></image>
+    <text>收藏</text>
   </view>
   <view class="icon">
     <image src="../../../../img/siliao.png"></image>
