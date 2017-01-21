@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/life/second/detail/detail",   
     "pages/life/job/detail/detail",    
     "pages/home/home",
     "pages/home/posts/posts",
@@ -10,7 +11,6 @@
     "pages/life/job/detail/detail",
     "pages/life/job/edit/edit",
     "pages/life/second/second",
-    "pages/life/second/detail/detail",   
     "pages/life/lost/lost",
     "pages/helper/helper",
     "pages/my/my"

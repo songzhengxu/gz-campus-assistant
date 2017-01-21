@@ -99,3 +99,12 @@
   display: block;
   margin:0 auto; 
 }
+.zhuren{
+    color:#53addf;
+    margin:0 10rpx;
+    font-size:24rpx;
+    border:1px solid #53addf;
+    padding:1rpx;
+    height: 18rpx;
+    line-height: 18rpx;
+}
