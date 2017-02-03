@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/life/second/detail/detail",     
+    "pages/map/map",     
     "pages/home/home",
     "pages/home/posts/posts",
     "pages/life/life",
@@ -13,7 +13,8 @@
     "pages/life/second/detail/detail",   
     "pages/life/lost/lost",
     "pages/helper/helper",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",

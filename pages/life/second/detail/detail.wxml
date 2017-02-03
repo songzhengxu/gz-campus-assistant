@@ -23,7 +23,12 @@
       <text class="icon">已实名</text>
       <text class="num"> 收藏 0 · 评论 199</text>
     </view>
-    <view class="shop_addr">地址：大学城华南理工大学</view>
+    <view class="shop_addr">
+      <text>地址：大学城华南理工大学</text>
+      <view class="shop_addr_icon">
+        <image mode="widthFix" src="../../../../img/life-addr.png"></image>
+      </view>
+    </view>
   </view>
   <view class="comments">
     <view wx:if="{{tips?'true':'false'}}" class="comments_tips">留言(10){{tips}}</view>

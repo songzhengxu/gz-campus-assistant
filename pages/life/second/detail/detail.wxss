@@ -76,11 +76,19 @@
     color: #999;
 }
 .shop_addr {
-    line-height: 70rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70rpx;
     font-size: 26rpx;
     color: #333;
-    background: url(https://wx.fanweimei.com/json/img/life-addr.png) no-repeat 96% center;
-    background-size: 52rpx;
+}
+.shop_addr_icon {
+    width: 80rpx;
+    text-align: right;
+}
+.shop_addr_icon image {
+    width: 52rpx;
 }
 .comments{
     background: #fff;
